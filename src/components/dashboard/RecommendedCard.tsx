@@ -25,18 +25,18 @@ const RecommendedCard = async (props: Props) => {
     return redirect("/");
   }
   return (
-    <Card className="col-span-4 lg:col-span-3">
+    <Card className="col-span-4 lg:col-span-3 bg-sky-300">
       <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-        <CardTitle className="text-2xl font-bold">Recommended Practice</CardTitle>
-        <Lightbulb size={28} strokeWidth={2.5} />
+        <CardTitle className="text-2xl font-bold text-white">Recommended Practice</CardTitle>
+        <Lightbulb size={28} strokeWidth={2.5} color="white" />
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-muted-foreground text-white">
           Selected Course: AP US History
         </p>
       </CardContent>
       <CardContent>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-muted-foreground text-white">
           We recommend practicing Unit 1!
         </p>
       </CardContent>
