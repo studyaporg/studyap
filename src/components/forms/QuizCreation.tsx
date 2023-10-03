@@ -52,57 +52,158 @@ import {
  
 const frameworks = [
   {
-    value: "AP Research",
-    label: "AP Research",
-  },
-  {
-    value: "AP Seminar",
-    label: "AP Seminar",
-  },
-  {
-    value: "AP Art History",
-    label: "AP Art History",
-  },
-  {
-    value: "AP Music Theory",
-    label: "AP Music Theory",
-  },
-  {
-    value: "AP Comparative Government and Politics",
-    label: "AP Comparative Government and Politics",
-  },
-  {
-    value: "AP European History",
-    label: "AP European History",
-  },
-  {
-    value: "AP Human Geography",
-    label: "AP Human Geography",
-  },
-  {
-    value: "AP Macroeconomics",
-    label: "AP Macroeconomics",
-  },
-  {
-    value: "AP Microeconomics",
-    label: "AP Microeconomics",
-  },
-  {
-    value: "AP Psychology",
-    label: "AP Psychology",
-  },
-  {
-    value: "AP United States Government and Politics",
-    label: "AP United States Government and Politics",
-  },
-  {
-    value: "AP United States History",
-    label: "AP United States History",
-  },
-  {
-    value: "AP World History: Modern",
-    label: "AP World History: Modern",
-  },
+  value: "AP Research",
+  label: "AP Research"
+},
+{
+  value: "AP Seminar",
+  label: "AP Seminar"
+},
+{
+  value: "AP Art and Design : 2-D Design",
+  label: "AP Art and Design : 2-D Design"
+},
+{
+  value: "AP Art and Design : 3-D Design",
+  label: "AP Art and Design : 3-D Design"
+},
+{
+  value: "AP Art and Design : Drawing",
+  label: "AP Art and Design : Drawing"
+},
+{
+  value: "AP Art History",
+  label: "AP Art History"
+},
+{
+  value: "AP Biology",
+  label: "AP Biology"
+},
+{
+  value: "AP Calculus AB",
+  label: "AP Calculus AB"
+},
+{
+  value: "AP Calculus BC",
+  label: "AP Calculus BC"
+},
+{
+  value: "AP Chemistry",
+  label: "AP Chemistry"
+},
+{
+  value: "AP Chinese Language and Culture",
+  label: "AP Chinese Language and Culture"
+},
+{
+  value: "AP Computer Science A",
+  label: "AP Computer Science A"
+},
+{
+  value: "AP Computer Science Principles",
+  label: "AP Computer Science Principles"
+},
+{
+  value: "AP English Language and Composition",
+  label: "AP English Language and Composition"
+},
+{
+  value: "AP English Literature and Composition",
+  label: "AP English Literature and Composition"
+},
+{
+  value: "AP Environmental Science",
+  label: "AP Environmental Science"
+},
+{
+  value: "AP European History",
+  label: "AP European History"
+},
+{
+  value: "AP French Language and Culture",
+  label: "AP French Language and Culture"
+},
+{
+  value: "AP German Language and Culture",
+  label: "AP German Language and Culture"
+},
+{
+  value: "AP Government and Politics ",
+  label: "AP Government and Politics "
+},
+{
+  value: "AP Government and Politics ",
+  label: "AP Government and Politics "
+},
+{
+  value: "AP Human Geography",
+  label: "AP Human Geography"
+},
+{
+  value: "AP Italian Language and Culture",
+  label: "AP Italian Language and Culture"
+},
+{
+  value: "AP Japanese Language and Culture",
+  label: "AP Japanese Language and Culture"
+},
+{
+  value: "AP Latin",
+  label: "AP Latin"
+},
+{
+  value: "AP Macroeconomics",
+  label: "AP Macroeconomics"
+},
+{
+  value: "AP Microeconomics",
+  label: "AP Microeconomics"
+},
+{
+  value: "AP Music Theory",
+  label: "AP Music Theory"
+},
+{
+  value: "AP Physics 1",
+  label: "AP Physics 1"
+},
+{
+  value: "AP Physics 2",
+  label: "AP Physics 2"
+},
+{
+  value: "AP Physics C: E & M",
+  label: "AP Physics C: E & M"
+},
+{
+  value: "AP Physics C: Mechanics",
+  label: "AP Physics C: Mechanics"
+},
+{
+  value: "AP Psychology",
+  label: "AP Psychology"
+},
+{
+  value: "AP Spanish Language and Culture",
+  label: "AP Spanish Language and Culture"
+},
+{
+  value: "AP Spanish Literature and Culture",
+  label: "AP Spanish Literature and Culture"
+},
+{
+  value: "AP Statistics",
+  label: "AP Statistics"
+},
+{
+  value: "AP US History",
+  label: "AP US History"
+},
+{
+  value: "AP World History: Modern",
+  label: "AP World History: Modern"
+},
+
 ]
 
 type Props = {
@@ -218,7 +319,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                                       value === framework.value ? "opacity-100" : "opacity-0"
                                     )}
                                   />
-                                  {framework.label}
+                                  {framework.value}
                                 </CommandItem>
                               ))}
                             </CommandGroup>
